@@ -19,8 +19,15 @@
     "@types/react": "^18.0.17",
     "@types/react-big-calendar": "^0.38.2",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
     "@vitejs/plugin-react": "^2.1.0",
-    "typescript": "^4.6.4",
+    "eslint": "^8.27.0",
+    "eslint-config-xo": "^0.42.0",
+    "eslint-config-xo-typescript": "^0.53.0",
+    "eslint-plugin-react": "^7.31.10",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
     "vite": "^3.1.0"
   }
 }
