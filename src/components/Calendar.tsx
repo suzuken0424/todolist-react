@@ -19,7 +19,7 @@ import IconButton from '@mui/material/IconButton'
 import Collapse from '@mui/material/Collapse'
 import Box from '@mui/material/Box'
 
-// import ShortTimeTask from '@/'
+import ShortTimeTasks from '@/components/ShortTimeTasks'
 
 type Event = {
   title: string
@@ -140,30 +140,7 @@ const MyCalendar = () => {
       </div>
       <div>
         <p>隙間タスク</p>
-        <TableContainer>
-          <Table aria-label="simple table" size="small">
-            <TableHead>
-              <TableRow>
-                <TableCell padding="checkbox">
-                  <Checkbox color="primary" />
-                </TableCell>
-                <TableCell>タスク名</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {shortTimeTasksRes.map((shortTimeTask) => {
-                return (
-                  <TableRow key={shortTimeTask.id}>
-                    <TableCell padding="checkbox">
-                      <Checkbox color="primary" />
-                    </TableCell>
-                    <TableCell>{shortTimeTask.name}</TableCell>
-                  </TableRow>
-                )
-              })}
-            </TableBody>
-          </Table>
-        </TableContainer>
+        <ShortTimeTasks shortTimeTasks={shortTimeTasksRes} />
       </div>
       <div>
         <p>じっくりタスク</p>

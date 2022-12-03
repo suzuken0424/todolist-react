@@ -11,7 +11,7 @@ type ShortTimeTask = {
   name: string
 }
 
-const ShortTimeTask = (shortTimeTasks: ShortTimeTask[]) => {
+const ShortTimeTasks = (props: { shortTimeTasks: ShortTimeTask[] }) => {
   return (
     <>
       <TableContainer>
@@ -25,7 +25,7 @@ const ShortTimeTask = (shortTimeTasks: ShortTimeTask[]) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {shortTimeTasks.map((shortTimeTask: ShortTimeTask) => {
+            {props.shortTimeTasks.map((shortTimeTask: ShortTimeTask) => {
               return (
                 <TableRow key={shortTimeTask.id}>
                   <TableCell padding="checkbox">
@@ -42,4 +42,4 @@ const ShortTimeTask = (shortTimeTasks: ShortTimeTask[]) => {
   )
 }
 
-export default ShortTimeTask
+export default ShortTimeTasks
