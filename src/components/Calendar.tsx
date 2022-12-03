@@ -7,8 +7,8 @@ import 'react-big-calendar/lib/addons/dragAndDrop/styles.css'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 
 // todo（aliasを使うとエラーにはならないが、コード上ではワーニングが出てしまう）
-import ShortTimeTasks from './ShortTimeTasks'
-import LongTimeTasks from './LongTimeTasks'
+import ShortTimeTasks from './Tasks/ShortTimeTasks'
+import LongTimeTasks from './Tasks/LongTimeTasks'
 
 type Event = {
   title: string
